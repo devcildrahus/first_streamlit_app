@@ -65,8 +65,8 @@ streamlit.stop()
 #allow the end user to add a fruit to the list
 def insert_row_snowflake(new_fruit):
     with my_cnx.cursor() as my_cur:
-    my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')")
-    return "Thanks for adding" + new_fruit
+        my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')")
+        return "Thanks for adding" + new_fruit
     
 #import streamlit as st
 add_my_fruit = st.text_input("what fruit would you like to add?")
