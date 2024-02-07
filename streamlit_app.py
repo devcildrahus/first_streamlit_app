@@ -34,6 +34,7 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # display on the screen as a table
 streamlit.dataframe(fruityvice_normalized)
 
+import snowflake.connector
 
 #allow the end user to add a fruit to the list
 import streamlit as st
