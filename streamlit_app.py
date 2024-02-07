@@ -49,4 +49,4 @@ add_my_fruit = st.text_input("what fruit would you like to add?")
 st.write('Thanks for adding', add_my_fruit)
 
 #this will not work correctly but just go for it for now
-my_cur.execute("insert into pc_rivery_db.public.fruit_load_list" ('from streamlit')")
+my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')")
